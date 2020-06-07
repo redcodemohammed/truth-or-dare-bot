@@ -59,7 +59,9 @@ bot.on("inline_query", ctx => {
         type: "article",
     };
 
-    ctx.answerInlineQuery([queryRes]);
+    ctx.answerInlineQuery([queryRes], {
+        cache_time: 0
+    });
 });
 
 //owner:
